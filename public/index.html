@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<body>
+	<header>
+		<h1><a href="#">Petulance</a></h1>
+	</header>
+	<ul id="allPets">
+	</ul>
+	<div id = "contentArea">
+	</div>
+	<a href="#pets/1">testing</a>
+	<script type="text/template" id="zooTemplate">
+	<ul id="petsList"></ul>
+	</script>
+
+	<script type="text/template" id="showPet">
+	<span class="pet">
+	<%= pet.name %> is a <%= pet.type %>
+	</span>
+	</script>
+
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="http://documentcloud.github.com/underscore/underscore-min.js"></script>
+  <script src="http://documentcloud.github.com/backbone/backbone-min.js"></script>
+
+  <script src = "/models/models.js"></script>
+  <script src = "/collections/collections.js"></script>
+  <script src = "/views/views.js"></script>
+  <script src = "/routes/routes.js"></script>
+</body>
+</html>
